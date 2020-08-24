@@ -1,10 +1,26 @@
+### Java ###
+# Compiled class file
 *.class
+
+# Log file
+*.log
+
+# BlueJ files
+*.ctxt
+
 HELP.md
+### Gradle ###
 .gradle
 build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
+
+# Package Files #
+*.jar
+*.war
+*.zip
+*.tar.gz
 
 ### STS ###
 .apt_generated
@@ -33,3 +49,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### Gradle Patch ###
+**/build/
