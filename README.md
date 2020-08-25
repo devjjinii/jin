@@ -9,3 +9,8 @@
 ## intellij TEST
 * Spring Boot
 * intellij import complete
+
+## 빌드
+* ./gradlew build or gradlew build
+* cd build/libs
+* java -jar jin-0.0.1-SNAPSHOT.jar
