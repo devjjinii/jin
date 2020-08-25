@@ -14,3 +14,6 @@
 * ./gradlew build or gradlew build
 * cd build/libs
 * java -jar jin-0.0.1-SNAPSHOT.jar
+
+#### This repository moved. Please use the new location:
+* git remote set-url origin "new git repository"
