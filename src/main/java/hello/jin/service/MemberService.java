@@ -9,9 +9,14 @@ import java.util.Optional;
 
 public class MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
 
-//    회원가입
+    // DI Dependency Injection
+    public MemberService(MemberRepository memberRepository) {
+        this.memberRepository = memberRepository;
+    }
+
+    //    회원가입
     public Long join(Member member) {
         // 중복 회원 검증
         vaildateDuplicateMember(member);
