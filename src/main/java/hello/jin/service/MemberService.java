@@ -3,10 +3,12 @@ package hello.jin.service;
 import hello.jin.domain.Member;
 import hello.jin.repository.MemberRepository;
 import hello.jin.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
