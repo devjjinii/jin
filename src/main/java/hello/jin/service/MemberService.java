@@ -3,17 +3,19 @@ package hello.jin.service;
 import hello.jin.domain.Member;
 import hello.jin.repository.MemberRepository;
 import hello.jin.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
+//@Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
 
     // DI Dependency Injection
+    @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
