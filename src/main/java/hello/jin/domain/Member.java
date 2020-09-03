@@ -1,8 +1,13 @@
 package hello.jin.domain;
 
-public class Member {
+import javax.persistence.*;
 
+@Entity
+public class Member {
+    //db가 알아서 pk 생성
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
 
     public Long getId() {
