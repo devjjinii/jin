@@ -24,10 +24,12 @@ public class MemberService {
 
     //    회원가입
     public Long join(Member member) {
+
         // 중복 회원 검증
         vaildateDuplicateMember(member);
         memberRepository.save(member);
         return member.getId();
+
     }
 
     private void vaildateDuplicateMember(Member member) {

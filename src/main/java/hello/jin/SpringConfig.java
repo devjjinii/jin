@@ -1,5 +1,6 @@
 package hello.jin;
 
+import hello.jin.aop.TimeTraceAop;
 import hello.jin.repository.MemberRepository;
 import hello.jin.service.MemberService;
 import org.springframework.context.annotation.Bean;
@@ -18,6 +19,11 @@ public class SpringConfig {
     public MemberService memberService() {
         return new MemberService(memberRepository);
     }
+
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
+//    }
 
 //    @PersistenceContext
 //    private EntityManager em;
